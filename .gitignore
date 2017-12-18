@@ -412,4 +412,6 @@ __pycache__/
 # By default, sensitive information, such as encrypted password
 # should be stored in the .pubxml.user file.
 
+windows/nuget/**/include/
+
 # End of https://www.gitignore.io/api/c,c++,autotools,visualstudio,visualstudiocode
