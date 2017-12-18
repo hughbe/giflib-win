@@ -146,7 +146,9 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup>
     <PostBuildEvent>
-      <Command>xcopy /Y "$(OutDir)*.lib" "$(ProjectDir)nuget\giflib.5.1.4\build\native\lib\$(Configuration)\$(Platform)\$(PlatformToolset)\"
+      <Command>xcopy /Y "$(ProjectDir)..\lib\gif_lib.h" "$(ProjectDir)nuget\giflib.5.1.4\build\native\include\"
+xcopy /Y "$(ProjectDir)..\lib\gif_hash.h" "$(ProjectDir)nuget\giflib.5.1.4\build\native\include\"
+xcopy /Y "$(OutDir)*.lib" "$(ProjectDir)nuget\giflib.5.1.4\build\native\lib\$(Configuration)\$(Platform)\$(PlatformToolset)\"
 xcopy /Y "$(OutDir)gif*.pdb" "$(ProjectDir)nuget\giflib.5.1.4\build\native\lib\$(Configuration)\$(Platform)\$(PlatformToolset)\"
 xcopy /Y "$(OutDir)*.dll" "$(ProjectDir)nuget\giflib.redist.5.1.4\build\native\bin\$(Configuration)\$(Platform)\$(PlatformToolset)\"</Command>
     </PostBuildEvent>
