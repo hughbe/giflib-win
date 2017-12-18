@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>giflib</id>
+    <version>5.1.4</version>
+    <title>giflib</title>
+    <authors>Eric S. Raymond, giflib Authors</authors>
+    <projectUrl>http://giflib.sourceforge.net/</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>This package contains C software to implement GIF image encoding and decoding.</description>
+    <summary>This package contains C software to implement GIF image encoding and decoding.</summary>
+    <copyright>Copyright 2017</copyright>
+    <tags>gif native v140 nativepackage</tags>
+    <dependencies>
+      <dependency id="giflib.redist" version="5.1.2" />
+    </dependencies>
+  </metadata>
+</package>
